@@ -1,0 +1,26 @@
+﻿/* ================================ *** animation *** ================================ */
+// ================================================================ antd 动画
+#root{
+    .ant-spin-dot i{.bc(#1890ff);}
+}
+.loading-wraper{.fix_lt(0,0,1000);.wh;.rgba(255,255,255,0.3);}
+// ================================================================ loading 动画2
+.loading-circle-2{.ww(@size);.p_rel;.animation(rotate 2.0s infinite linear);
+    @bgcolor:@main-color;
+    @size:50;
+    @circle-size:60%;
+    
+    i{.ww(@circle-size);.p_abs;.r0px;.bc(@bgcolor);.animation(bounce 2.0s infinite ease-in-out);
+        &:nth-child(1){.t;}
+        &:nth-child(2){.bm;.animation-delay(-1.0)}
+    }
+}
+@-webkit-keyframes rotate {100%{-webkit-transform:rotate(360deg)}}
+@-moz-keyframes rotate {100%{-moz-transform:rotate(360deg)}}
+@-ms-keyframes rotate {100%{-ms-transform:rotate(360deg)}}
+@keyframes rotate {100%{transform:rotate(360deg)}}
+
+@-webkit-keyframes bounce {0%, 100%{-webkit-ktransform:scale(0.0)} 50%{-webkit-ktransform:scale(1.0)};}
+@-moz-keyframes bounce {0%, 100%{-moz-transform:scale(0.0)} 50%{-moz-transform:scale(1.0)};}
+@-ms-keyframes bounce {0%, 100%{-ms-transform:scale(0.0)} 50%{-ms-transform:scale(1.0)};}
+@keyframes bounce {0%, 100%{transform:scale(0.0)} 50%{ transform:scale(1.0)};}

@@ -1,0 +1,70 @@
+﻿/* ================================ *** form *** ================================ */
+@input-height:32;                           // 文档框高度
+@input-font:inherit;                        // 字体   
+@input-color:@font-color;                   // 字体 color
+@input-border-color:@border-color;          // 边框 border-color
+@input-focus-border-color:@main-color;      // 焦点 border-color
+*:focus { outline: none; }
+/*
+input,select,textarea{.ff(@input-font);.c(@input-color);.bor(@input-border-color);.r3px;
+    &:focus{.bor(@input-focus-border-color);
+        //.box-shadows(inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6));
+    }
+}
+// ================================================================ input
+input{.h(@input-height);.plr5;}
+// ================================================================ checkbox
+input[type='checkbox'],input[type='radio']{.hau;}
+// ================================================================ radio
+
+// ================================================================ select
+select{padding:3px 3px 4px 5px;.bor(@input-border-color);.h(@input-height);
+    .lh(-6 + @input-height);
+}
+// ================================================================ textarea
+textarea{.mh(100);.bor(@input-border-color);.pl5;.lh20;}
+// ================================================================ upload file
+input[type='file']{.abs_lt(0,0,1);.wh;.op(0);}
+*/
+
+#root{
+    button:extend(.omit){}
+}
+// ================================================================ form style
+.search-form{.ptb20;
+    .ant-btn{.f12;.pl;.pr;}
+}
+.custom-form{.mb;
+    //.ant-input{.h(@p);}
+    //.ant-select-selection--single{.h(@p - 2)}
+    li:extend(.clearfix all){.mt15;
+        &:first-child{.mt;}
+    }
+    h6,p{.lh30;.f12;.m;}
+    h6:extend(.omit){.pr10;.tr;
+        i{.c(red);}
+    }
+    .ant-form-item-control{.lh(32)}
+    .ant-form-item{.mb;}
+    h6{
+         i{.c(red);}
+    }
+    h6+aside:extend(.rel){}
+    .ant-radio-group{.mt(3);}
+}
+
+.sub-form{
+    li{.mt15;
+        &:first-child{.mt;}
+    }
+    .ant-form-explain{.f12;.p_abs_lt(0,auto);.mt;.bm(-16)}
+}
+
+.small-form{
+    h6{.lh24}
+    li{.mt10;
+        &:first-child{.mt;}
+    }
+}
+
+.radio-feedback .ant-form-item-children{.db;}

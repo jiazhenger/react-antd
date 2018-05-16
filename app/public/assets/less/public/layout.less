@@ -1,0 +1,37 @@
+﻿//html,body{.oh;}
+//#root{.wh;}
+//.app-wraper:extend(.wh){}
+@header-height:50;
+.frame-wraper:extend(.fv,.wh){
+    .header{.hh(@header-height)}
+}
+.ant-layout-has-sider:extend(.fx){}
+//.ant-layout-sider:extend(.flex){.ox;.oy;}
+//.content-wraper:extend(.flex){.oy;.ox;.ml10;}
+.content-wraper{.p(0 10px 10px);}
+.content{.bc_fff;.pb100;}
+#menu{
+    .ant-affix:extend(.oys all){.h;}
+    .ant-menu-item,.ant-menu-submenu-title{.m;}
+    .ant-menu-submenu-title{.hh36}
+    .ant-menu-item{.f12;.hh34;}
+}
+
+.logo{.f20;.b;.plr10;.rel;
+    .anticon{.c(@main-color);.lh(30);.cp;.fs(20);.abs_lt(200,9);
+        &:before{.ww(30);.border-radius(4);
+            //.bc(@main-color);.c_fff;
+        }
+    }
+}
+.header{
+    .nav{.tr;.plr10;.f12;
+        >*{.mr10;}
+        b{.c(red);.mlr(3)}
+    }
+}
+
+#root{
+    // 返回顶部按钮
+    .ant-back-top{.r(5)}
+}

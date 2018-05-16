@@ -1,0 +1,10 @@
+/* ================================ *** btn *** ================================ */
+/*
+[class^='btn-']{.dk;.tc;.ff(inherit);.plr10;.cp;.nowrap;
+    &.disabled{.cd;}
+    >i{.mr5;.vt;}
+    &[disabled],&.disabled{.cd;.op(.6);
+        &:hover{.box-shadow(none);.op(.6);}
+        &:active{.t;}
+    }
+}*/

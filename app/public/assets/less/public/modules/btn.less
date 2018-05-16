@@ -1,0 +1,22 @@
+﻿/* ================================ *** btn *** ================================ */
+// ================================================================ 初始化按钮
+/*
+[class^='btn-']{.dk;.tc;.ff(inherit);.plr10;.cp;.nowrap;
+    &.disabled{.cd;}
+    >i{.mr5;.vt;}
+    &[disabled],&.disabled{.cd;.op(.6);
+        &:hover{.box-shadow(none);.op(.6);}
+        &:active{.t;}
+    }
+}*/
+// ================================================================ 默认按钮
+.btn-default{}
+.action-btn:extend(.c1){
+    &:hover{.c(@main-color);.tu}
+}
+#root{
+    .ant-btn-sm{.f12}
+}
+.res-sm-btn{
+    .ant-btn{.mw(130);}
+}

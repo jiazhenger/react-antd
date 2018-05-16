@@ -1,0 +1,28 @@
+﻿/* ================================ *** 个性化模块 *** ================================ */
+//.ant-breadcrumb{
+//  >span:first-child{
+//      .ant-breadcrumb-separator{.dn;}
+//  }
+//}
+// ================================ 操作导航
+.control-btn-group:extend(.padding){@p:10;.pt(@p*2);.pb(@p);.bc_fff;.bbor_ddd;
+    button{.m_rb(10,@p)}
+}
+
+.ant-affix{.box-shadow(0 0 3px #666)}
+
+@media (max-width:@md-window-width-1){
+    .control-btn-group{
+        button{.db;.m_rb(0,10);.w;}
+    }
+}
+// ================================ 底部空白
+.bottom{.h100}
+.ant-menu-item > a{.wh;}
+// ==================================================================================================== 登录
+.login-form{.plr10;.grad-center(#fff,#f0f0f0);.fix_lt;
+    h2{.tc;.f22;.mb25;}
+    .ant-btn{.w;}
+    .ant-form-item{.mb20}
+}
+.login-box{.w(320);.bor_ddd;.p20;.bc_fff;.r10px;.box-shadow(0 0 3px #ddd)}
